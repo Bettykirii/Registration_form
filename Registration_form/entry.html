@@ -1,0 +1,22 @@
+<html>
+	<head>
+	   <title>Students Registration Form</title>
+	   <link rel="stylesheet" href="w3.css"></link>
+   </head>
+   <body style="background:brown;">
+		<div id="header"class="w3-container w3-black" style="margin-top:5px;width:70%;margin-left:15%;border-radius:10px;">
+			<p style="text-align:center;">STUDENT DATA ENTRY FORM</p>
+		</div>    		
+      <div id="body" class="w3-container w3-orange" style="width:50%;height:80%;border-radius:15px;margin-left:25%;margin-top:15px;">
+      	<form action="receive.php" method="POST" style="padding-top:50px;">
+      	   <input type="text" name="name" style="width:50%;margin-left:25%;height:10%;border-radius:10px;text-align:center;margin-bottom:5px;" placeholder="ENTER NAME HERE" required><br/>
+            <input type="number" name="id"  min="0" style="width:50%;margin-left:25%;height:10%;border-radius:10px;text-align:center;margin-bottom:5px;" placeholder="ENTER ID NUMBER HERE" required><br/>
+            <input type="email" name="email" style="width:50%;margin-left:25%;height:10%;border-radius:10px;text-align:center;margin-bottom:10px;" placeholder="ENTER EMAIL ADDRESS HERE" required><br/>
+            <p style="text-align:center;">PLEASE ENTER STUDENT'S GENDER BELOW</p>
+            <input type="radio" name="gender" style="width:10%;margin-left:25%;height:5%;border-radius:10px;text-align:center;margin-bottom:5px;" value="Male" placeholder="MALE" required> MALE<br/>
+            <input type="radio" name="gender" style="width:10%;margin-left:25%;height:5%;border-radius:10px;text-align:center;margin-bottom:5px;" value="Female" placeholder="FEMALE" required> FEMALE<br/>
+            <input type="submit" class="w3-teal" style="width:30%;margin-top:40px;border:0px;margin-left:35%;height:10%;border-radius:10px;text-align:center;margin-bottom:5px;" value="SUBMIT">
+         </form>
+      </div>
+	</body>
+</html>
